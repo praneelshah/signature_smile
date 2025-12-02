@@ -72,7 +72,7 @@ const Home = () => {
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [videoDuration]);
+  }, [videoDuration, isMobile]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -116,12 +116,15 @@ const Home = () => {
       setVideoDuration(trimmedDuration);
       targetTimeRef.current = 0;
       heroVideoRef.current.currentTime = effectiveStart;
-      const playPromise = heroVideoRef.current.play();
-      playPromise
-        ?.then(() => heroVideoRef.current?.pause())
-        .catch(() => {
-          heroVideoRef.current?.pause();
-        });
+      // For desktop, "prime" the video by playing one frame, then pausing.
+      if (!isMobile) {
+        const playPromise = heroVideoRef.current.play();
+        playPromise
+          ?.then(() => heroVideoRef.current?.pause())
+          .catch(() => {
+            heroVideoRef.current?.pause();
+          });
+      }
     }
   };
 
