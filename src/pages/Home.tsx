@@ -16,7 +16,9 @@ const HERO_VIDEO_END = 9;
 const Home = () => {
   const heroSectionRef = useRef<HTMLDivElement>(null);
   const heroVideoRef = useRef<HTMLVideoElement>(null);
-  const [videoDuration, setVideoDuration] = useState(0);
+  const [videoDuration, setVideoDuration] = useState(
+    HERO_VIDEO_END - HERO_VIDEO_START
+  );
   const [sectionHeight, setSectionHeight] = useState("200vh");
   const isMobile = useIsMobile();
   const animationFrameRef = useRef<number>();
@@ -45,7 +47,7 @@ const Home = () => {
     if (typeof window === "undefined") return;
 
     const handleScroll = () => {
-      if (!heroSectionRef.current || !heroVideoRef.current || !videoDuration) {
+      if (!heroSectionRef.current || !heroVideoRef.current) {
         return;
       }
 
@@ -73,7 +75,7 @@ const Home = () => {
   }, [videoDuration]);
 
   useEffect(() => {
-    if (typeof window === "undefined" || !videoDuration) return;
+    if (typeof window === "undefined") return;
 
     const tick = () => {
       if (!heroVideoRef.current) {
@@ -131,7 +133,7 @@ const Home = () => {
         className="relative"
         style={{ height: sectionHeight }}
       >
-        <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+        <div className="sticky top-16 sm:top-20 lg:top-24 h-screen flex items-center overflow-hidden">
           <video
             ref={heroVideoRef}
             className="absolute inset-0 w-full h-full object-cover"
