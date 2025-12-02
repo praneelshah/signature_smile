@@ -142,6 +142,7 @@ const Home = () => {
             className="absolute inset-0 w-full h-full object-cover"
             src={heroVideo}
             muted
+            autoPlay
             playsInline
             preload="auto"
             poster={heroPoster}
