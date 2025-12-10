@@ -119,7 +119,7 @@ const Contact = () => {
                 <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
                 <p className="text-lg text-muted-foreground mb-8">
                   Our friendly team is ready to answer your questions and help
-                  you schedule your All-on-4 consultation.
+                  you schedule your All-on-X consultation.
                 </p>
               </div>
 
@@ -181,12 +181,32 @@ const Contact = () => {
 
               <Card className="p-6 bg-primary text-primary-foreground">
                 <h3 className="font-bold text-lg mb-2">
-                  Insurance Coverage Available
+                  Insurance Coverage May Be Available
                 </h3>
                 <p className="opacity-90">
-                  We accept BlueCross BlueShield medical insurance for All-on-4
-                  procedures. Ask about flexible payment options!
+                  We accept multiple dental and medical insurance plans. Many
+                  advanced procedures may qualify for medical insurance benefits
+                  depending on your plan, diagnosis, and documentation.
                 </p>
+                <div className="mt-3 space-y-2 opacity-90">
+                  <p>
+                    We offer a range of financing solutions designed to make
+                    your treatment accessible and affordable.
+                  </p>
+                  <p>
+                    Multiple financing partners with customizable payment plans
+                    are offered to fit your budget.
+                  </p>
+                  <p>
+                    While the initial investment may be higher than dentures,
+                    All-on-X implants eliminate frequent adjustments, periodic
+                    replacements, and long-term denture frustrations.
+                  </p>
+                  <p>
+                    A durable, fixed smile restores natural function, enhances
+                    appearance, and offers lasting confidence.
+                  </p>
+                </div>
               </Card>
             </div>
           </div>

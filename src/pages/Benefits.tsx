@@ -26,10 +26,10 @@ const Benefits = () => {
         />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h1 className="text-5xl font-bold mb-6 text-white">
-            Benefits of All-on-4 Dental Implants
+            Benefits of All-on-X Dental Implants
           </h1>
           <p className="text-xl max-w-3xl mx-auto text-gray-200">
-            Discover why thousands choose All-on-4 for a life-changing smile
+            Discover why thousands choose All-on-X for a life-changing smile
             transformation
           </p>
         </div>
@@ -45,7 +45,7 @@ const Benefits = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Permanent Solution</h3>
               <p className="text-muted-foreground">
-                Unlike removable dentures, All-on-4 implants are permanently
+                Unlike removable dentures, All-on-X implants are permanently
                 fixed in your mouth, providing a stable foundation that feels
                 and functions like natural teeth.
               </p>
@@ -80,7 +80,7 @@ const Benefits = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Eat What You Love</h3>
               <p className="text-muted-foreground">
-                Enjoy all your favorite foods without restrictions. All-on-4
+                Enjoy all your favorite foods without restrictions. All-on-X
                 implants restore full chewing power, unlike traditional dentures.
               </p>
             </Card>
@@ -91,7 +91,7 @@ const Benefits = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Long-Lasting Results</h3>
               <p className="text-muted-foreground">
-                With proper care, All-on-4 implants can last for decades,
+                With proper care, All-on-X implants can last for decades,
                 making them a cost-effective long-term investment in your oral
                 health.
               </p>
@@ -118,10 +118,12 @@ const Benefits = () => {
             <div className="text-center mb-12">
               <Shield className="h-16 w-16 text-primary mx-auto mb-6" />
               <h2 className="text-4xl font-bold mb-4">
-                Insurance Coverage Available
+                Insurance Coverage May Be Available
               </h2>
               <p className="text-xl text-muted-foreground">
-                We accept BlueCross BlueShield medical insurance
+                We accept multiple dental and medical insurance plans. Many
+                patients are surprised to learn that certain procedures may be
+                covered under medical insurance, not just dental insurance.
               </p>
             </div>
 
@@ -134,9 +136,9 @@ const Benefits = () => {
                       Medical Insurance Accepted
                     </h3>
                     <p className="text-muted-foreground">
-                      Many patients are surprised to learn that All-on-4
-                      procedures may be covered under medical insurance, not
-                      just dental insurance.
+                      Many advanced procedures may qualify for medical insurance
+                      benefits depending on your plan, diagnosis, and
+                      documentation.
                     </p>
                   </div>
                 </div>
@@ -148,8 +150,8 @@ const Benefits = () => {
                       Flexible Payment Options
                     </h3>
                     <p className="text-muted-foreground">
-                      We offer various financing solutions to make your
-                      treatment accessible and affordable.
+                      We offer a range of financing solutions designed to make
+                      your treatment accessible and affordable.
                     </p>
                   </div>
                 </div>
@@ -158,12 +160,38 @@ const Benefits = () => {
                   <Check className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-2">
-                      Cost-Effective Long-Term
+                      Third-Party Financing Available
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Multiple financing partners with customizable payment
+                      plans are offered to fit your budget.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <Check className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">
+                      Cost-Effective Long-Term Solution
                     </h3>
                     <p className="text-muted-foreground">
                       While the initial investment may be higher than dentures,
-                      All-on-4 eliminates the need for adhesives, replacements,
-                      and frequent adjustments.
+                      All-on-X implants eliminate frequent adjustments, periodic
+                      replacements, and long-term denture frustrations.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <Check className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">
+                      Confidence, Stability & Self-Esteem
+                    </h3>
+                    <p className="text-muted-foreground">
+                      A durable, fixed smile restores natural function, enhances
+                      appearance, and offers lasting confidence.
                     </p>
                   </div>
                 </div>
@@ -177,14 +205,14 @@ const Benefits = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">
-            All-on-4 vs Traditional Dentures
+            All-on-X vs Traditional Dentures
           </h2>
 
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-6 border-2 border-primary">
                 <h3 className="text-2xl font-bold mb-6 text-center">
-                  All-on-4 Implants
+                  All-on-X Implants
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
@@ -254,10 +282,10 @@ const Benefits = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">
-            Experience the All-on-4 Difference
+            Experience the All-on-X Difference
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Join thousands who have transformed their lives with All-on-4 dental
+            Join thousands who have transformed their lives with All-on-X dental
             implants
           </p>
           <Button size="lg" variant="secondary" asChild>

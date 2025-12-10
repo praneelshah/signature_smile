@@ -10,7 +10,7 @@ const Navigation = () => {
 
   const links = [
     { to: "/", label: "Home" },
-    { to: "/all-on-4", label: "All-on-4 Implants" },
+    { to: "/all-on-4", label: "All-on-X Implants" },
     { to: "/benefits", label: "Benefits" },
     { to: "/doctor", label: "Meet the Doctors" },
     { to: "/contact", label: "Contact" },

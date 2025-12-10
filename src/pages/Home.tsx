@@ -8,10 +8,11 @@ import heroPoster from "@/assets/hero-dental.jpg";
 import dentalImplantsImage from "@/assets/dental-implants.jpg";
 import { useIsMobile } from "@/hooks/use-mobile";
 
-const SCROLL_SPEED_MULTIPLIER = 1.4;
-const SMOOTHING_FACTOR = 0.18;
-const HERO_VIDEO_START = 2;
-const HERO_VIDEO_END = 9;
+// Make the clip finish faster so it completes well before mid-page scroll
+const SCROLL_SPEED_MULTIPLIER = 2.6;
+const SMOOTHING_FACTOR = 0.34;
+const HERO_VIDEO_START = 3;
+const HERO_VIDEO_END = 8.5;
 
 const Home = () => {
   const heroSectionRef = useRef<HTMLDivElement>(null);
@@ -153,7 +154,7 @@ const Home = () => {
             <div className="max-w-2xl text-white animate-fade-in">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Transform Your Smile with{" "}
-                <span className="text-primary">All-on-4</span> Dental Implants
+                <span className="text-primary">All-on-X</span> Dental Implants
               </h1>
               <p className="text-xl mb-8 text-gray-200">
                 A permanent solution for missing teeth. Speak, chew, and smile
@@ -177,15 +178,15 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose All-on-4 */}
+      {/* Why Choose All-on-X */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">
-              Why Choose All-on-4 Dental Implants?
+              Why Choose All-on-X Dental Implants?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Unlike traditional dentures, All-on-4 uses four strategically
+              Unlike traditional dentures, All-on-X uses four strategically
               placed implants for a secure, natural-looking smile
             </p>
           </div>
@@ -211,7 +212,7 @@ const Home = () => {
                 Experienced Team
               </h3>
               <p className="text-sm text-muted-foreground">
-                Specialists dedicated to All-on-4 implant procedures
+                Specialists dedicated to All-on-X implant procedures
               </p>
             </Card>
 
@@ -242,7 +243,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About All-on-4 */}
+      {/* About All-on-X */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -255,10 +256,10 @@ const Home = () => {
             </div>
             <div>
               <h2 className="text-4xl font-bold mb-6">
-                What Are All-on-4 Dental Implants?
+                What Are All-on-X Dental Implants?
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                All-on-4 dental implants are a revolutionary solution for those
+                All-on-X dental implants are a revolutionary solution for those
                 missing a full arch of teeth. Using just four strategically
                 placed titanium implants, we can anchor a complete set of
                 natural-looking teeth.
@@ -301,7 +302,7 @@ const Home = () => {
             Ready to Transform Your Smile?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Schedule a consultation today and discover how All-on-4 dental
+            Schedule a consultation today and discover how All-on-X dental
             implants can change your life.
           </p>
           <Button size="lg" variant="secondary" asChild>

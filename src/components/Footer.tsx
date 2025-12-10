@@ -11,7 +11,7 @@ const Footer = () => {
               Signature Smile
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Transform your smile with advanced All-on-4 dental implant
+              Transform your smile with advanced All-on-X dental implant
               solutions. Professional care for lasting results.
             </p>
           </div>
@@ -24,7 +24,7 @@ const Footer = () => {
                   to="/all-on-4"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  All-on-4 Procedure
+                  All-on-X Procedure
                 </Link>
               </li>
               <li>
