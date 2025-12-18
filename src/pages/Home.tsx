@@ -4,7 +4,6 @@ import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { CheckCircle2, Shield, Clock, Award } from "lucide-react";
 import heroVideo from "@/assets/video_dental.mp4";
-import heroPoster from "@/assets/hero-dental.jpg";
 import dentalImplantsImage from "@/assets/dental-implants.jpg";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -12,7 +11,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const SCROLL_SPEED_MULTIPLIER = 2.6;
 const SMOOTHING_FACTOR = 0.34;
 const HERO_VIDEO_START = 3;
-const HERO_VIDEO_END = 8.5;
+const HERO_VIDEO_END = 8.9;
 
 const Home = () => {
   const heroSectionRef = useRef<HTMLDivElement>(null);
@@ -24,6 +23,7 @@ const Home = () => {
   const isMobile = useIsMobile();
   const animationFrameRef = useRef<number>();
   const targetTimeRef = useRef(0);
+  const hasAutoScrolledRef = useRef(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -32,9 +32,9 @@ const Home = () => {
       const viewportHeight = window.innerHeight || 800;
       const dynamicHeight =
         videoDuration > 0
-          ? Math.max(videoDuration * viewportHeight * 0.9, viewportHeight * 2)
-          : viewportHeight * 2;
-      const minHeight = isMobile ? viewportHeight * 1.5 : viewportHeight * 2;
+          ? Math.max(videoDuration * viewportHeight * 0.6, viewportHeight * 1.6)
+          : viewportHeight * 1.8;
+      const minHeight = isMobile ? viewportHeight * 1.4 : viewportHeight * 1.6;
       setSectionHeight(`${Math.max(dynamicHeight, minHeight)}px`);
     };
 
@@ -95,6 +95,19 @@ const Home = () => {
         );
       }
 
+      // When the clip is effectively finished, auto-scroll to the next section once
+      if (
+        !hasAutoScrolledRef.current &&
+        typeof window !== "undefined" &&
+        heroSectionRef.current &&
+        heroVideoRef.current.currentTime >= HERO_VIDEO_END - 0.1
+      ) {
+        hasAutoScrolledRef.current = true;
+        const section = heroSectionRef.current;
+        const nextSectionTop = section.offsetTop + section.offsetHeight;
+        window.scrollTo({ top: nextSectionTop, behavior: "smooth" });
+      }
+
       animationFrameRef.current = requestAnimationFrame(tick);
     };
 
@@ -146,7 +159,6 @@ const Home = () => {
             autoPlay
             playsInline
             preload="auto"
-            poster={heroPoster}
             onLoadedMetadata={handleLoadedMetadata}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/20" />
