@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import procedureDiagram from "@/assets/procedure-diagram.jpg";
+import procedureDiagram from "@/assets/img2.jpg";
 import bannerImage from "@/assets/banner-all-on-4.jpg";
 
 const AllOnFour = () => {
